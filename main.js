@@ -3,7 +3,7 @@
 //variabili
 let chilometri;
 let eta;
-let prezzoBase;6
+let prezzoBase;
 let scontoMinore;
 let scontoMaggiore;
 let prezzoScontato;
@@ -28,11 +28,11 @@ scontoMaggiore = prezzoBase * 0.40;
 if (eta < 18) {
     prezzoScontato = prezzoBase - scontoMinore;
     console.log("sconto minore", scontoMinore);
-    document.getElementById("prezzo_scontato").innerHTML = `Prezzo scontato €${prezzoScontato.toFixed(2)} Sconto minorenne €${scontoMinore.toFixed(2)} `;
+    document.getElementById("prezzo_scontato").innerHTML = `Prezzo scontato €${prezzoScontato.toFixed(2)} / Sconto minorenne €${scontoMinore.toFixed(2)} `;
 } else if (eta > 65) {
     prezzoScontato = prezzoBase - scontoMaggiore;
     console.log("sconto maggiore", scontoMaggiore);
-    document.getElementById("prezzo_scontato").innerHTML = `Prezzo scontato €${prezzoScontato.toFixed(2)} Sconto over 65 €${scontoMinore.toFixed(2)} `;
+    document.getElementById("prezzo_scontato").innerHTML = `Prezzo scontato €${prezzoScontato.toFixed(2)} / Sconto over 65 €${scontoMinore.toFixed(2)} `;
 }
 
 console.log("prezzo scontato", prezzoScontato);
